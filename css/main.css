@@ -1,0 +1,294 @@
+/* General styles */
+body {
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #303030; }
+  body div, body p, body h1, body h2, body h3, body h4, body h5, body h6, body ul, body li, body a, body img, body span, body strong, body section, body header, body footer, body main, body button, body figure {
+    margin: 0;
+    padding: 0; }
+  body ul, body li {
+    list-style: none; }
+  body a,
+  body a:hover {
+    color: #2E79B8;
+    text-decoration: none; }
+  body button,
+  body button:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+h2 {
+  font-size: 30px;
+  line-height: 37px;
+  color: #303030;
+  font-weight: 600; }
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #303030;
+  font-weight: 600; }
+
+.btn {
+  min-width: 134px;
+  min-height: 42px;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 600;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px; }
+  .btn.btnWhite {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #303030; }
+    .btn.btnWhite:hover {
+      background-color: #2E79B8;
+      border: 1px solid #2E79B8;
+      color: #ffffff; }
+  .btn.btnBlue {
+    background-color: #2E79B8;
+    border: 1px solid #2E79B8;
+    color: #ffffff; }
+    .btn.btnBlue:hover {
+      background-color: #112C4A;
+      border: 1px solid #112C4A; }
+
+/* General styles ends */
+/* Header */
+header {
+  background-color: #083208;
+  color: #ffffff;
+  position: relative; }
+  header a {
+    color: #ffffff; }
+  header .subNav {
+    background-color: rgba(0, 0, 0, 0.1); }
+    header .subNav .container {
+      display: flex;
+      justify-content: flex-end; }
+    header .subNav ul {
+      display: flex;
+      align-items: center;
+      min-height: 40px;
+      margin-right: 20px; }
+      header .subNav ul li {
+        margin: 0 0 0 20px; }
+      header .subNav ul a {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500; }
+  header .mainNav {
+    padding: 16px 0 10px; }
+    header .mainNav .navbar-toggler {
+      padding: 0;
+      border: 0 none; }
+      header .mainNav .navbar-toggler:focus {
+        outline: 0; }
+    header .mainNav .navbar-toggler-icon {
+      background-image: none;
+      width: 27px; }
+      header .mainNav .navbar-toggler-icon span {
+        height: 3px;
+        margin: 5px 0;
+        background-color: #ffffff;
+        display: block; }
+    header .mainNav .navbar-brand {
+      margin-right: 104px; }
+    header .mainNav .navbar-nav .nav-link {
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      padding: 10px 0; }
+      header .mainNav .navbar-nav .nav-link:hover {
+        color: #2E79B8; }
+  header .banner {
+    padding: 72px 0 77px;
+    position: relative; }
+    header .banner h1 {
+      font-size: 44px;
+      line-height: 77px;
+      font-weight: 600; }
+    header .banner p {
+      font-size: 22px;
+      line-height: 33px;
+      font-weight: 500; }
+    header .banner .btn {
+      margin: 21px 0 0; }
+    header .banner figure {
+      max-width: 595px;
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      height: 397px;
+      z-index: 1; }
+      header .banner figure img {
+        height: 100%; }
+  @media only screen and (min-width: 992px) {
+    header {
+      min-height: 440px;
+      overflow: hidden; }
+      header::after {
+        position: absolute;
+        width: 75%;
+        left: 44%;
+        top: 40px;
+        height: 100%;
+        content: ' ';
+        background: -webkit-radial-gradient(closest-side, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+        background: -moz-radial-gradient(closest-side, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+        background: radial-gradient(closest-side, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.2) 0%, transparent 100%); }
+      header .mainNav {
+        z-index: 2; }
+        header .mainNav .navbar-brand {
+          margin-right: 84px; }
+        header .mainNav .navbar-nav .nav-link {
+          padding: 8px 14px; }
+      header .banner {
+        padding: 30px 0 77px; }
+        header .banner h1 {
+          font-size: 80px; }
+        header .banner p {
+          margin: 20px 0 0; } }
+  @media only screen and (max-width: 1120px) {
+    header .banner figure {
+      right: -20px; } }
+  @media only screen and (max-width: 991px) {
+    header .mainNav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #083208;
+      z-index: 99; }
+      header .mainNav .navbar-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        margin: 10px 0 0;
+        padding: 10px 0 0; } }
+
+/* Header ends */
+/* Page Content */
+main {
+  background-color: #f6f6f6; }
+  main .container {
+    padding-top: 69px;
+    padding-bottom: 69px; }
+  main h2 {
+    margin: 40px 0 20px; }
+  main .badgeCard {
+    border: 0 none;
+    padding: 25px 0 5px;
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05); }
+    main .badgeCard .card-img-top {
+      max-width: 140px;
+      margin: 0 auto; }
+    main .badgeCard .card-body {
+      color: #112C4A; }
+      main .badgeCard .card-body h2 {
+        margin: 0 0 12px; }
+      main .badgeCard .card-body p {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        margin: 10px 0 13px; }
+      main .badgeCard .card-body ul {
+        margin: 0 0 20px; }
+        main .badgeCard .card-body ul li {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          padding: 5px 0 5px 44px;
+          position: relative; }
+          main .badgeCard .card-body ul li strong {
+            font-weight: 600; }
+          main .badgeCard .card-body ul li:before {
+            content: '.';
+            position: absolute;
+            left: 20px;
+            top: -3px;
+            font-size: 24px; }
+  main .featureBlock img {
+    width: 100%; }
+  main .featureBlock h3 {
+    margin: 5px 0 8px; }
+  main .featureBlock p {
+    font-size: 16px;
+    line-height: 24px; }
+    main .featureBlock p.number {
+      color: rgba(132, 203, 8, 0.5);
+      font-size: 40px;
+      line-height: 49px;
+      font-weight: 600; }
+  @media only screen and (min-width: 992px) {
+    main h2 {
+      margin: 0 0 40px; }
+    main .badgeCard {
+      padding: 41px 0 30px; } }
+  @media only screen and (max-width: 992px) {
+    main .featureBlock img {
+      margin: 0 0 15px; } }
+
+/* Page Content ends */
+/* Footer */
+footer {
+  background-color: #112C4A;
+  position: relative; }
+  footer .container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    z-index: 1; }
+  footer a {
+    color: #ffffff; }
+  footer ul li {
+    padding: 0px 0 7px; }
+    footer ul li a {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 500; }
+  footer ul.socialList {
+    padding: 20px 0; }
+    footer ul.socialList li {
+      margin: 0 7px 0 0; }
+  footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400; }
+  footer figure {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+  @media only screen and (min-width: 992px) {
+    footer .container {
+      padding-top: 30px;
+      padding-bottom: 16px; }
+    footer ul li {
+      padding: 0; }
+    footer ul.leftList li {
+      margin: 0 20px 0 0; }
+    footer ul.rightList li {
+      margin: 0 0 0 20px; }
+    footer ul.socialList li {
+      margin: 0 0 0 7px; } }
+
+/* Footer ends */
