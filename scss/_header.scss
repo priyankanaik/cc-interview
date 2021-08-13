@@ -1,0 +1,185 @@
+/* Header */
+header{
+    background-color: #083208;
+    color: #ffffff;
+    position: relative;
+    
+    a{
+        color: #ffffff;
+    }
+    
+    .subNav{
+        background-color: rgba(0,0,0,0.1);
+        
+        .container{
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        ul{
+            display: flex;
+            align-items: center;
+            min-height: 40px;
+            margin-right: 20px;
+            
+            li{
+                margin: 0 0 0 20px;
+            }
+            
+            a{
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .mainNav{
+        padding: 16px 0 10px;
+        
+        .navbar-toggler{
+            padding: 0;
+            border: 0 none;
+            
+            &:focus{
+                outline: 0;
+            }
+        }
+        
+        .navbar-toggler-icon{
+            background-image: none;
+            width: 27px;
+            
+            span{
+                height: 3px;
+                margin: 5px 0;
+                background-color: #ffffff;
+                display: block;
+            }
+        }
+        
+        .navbar-brand{
+            margin-right: 104px;
+        }
+        
+        .navbar-nav{
+            .nav-link{
+                color: #ffffff;
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 500;
+                padding: 10px 0;
+                
+                &:hover{
+                    color: #2E79B8;
+                }
+            }
+        }
+    }
+    
+    .banner{
+        padding: 72px 0 77px;
+        position: relative;
+        
+        h1{
+            font-size: 44px;
+            line-height: 77px;
+            font-weight: 600;
+        }
+        
+        p{
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 500;
+        }
+        
+        .btn{
+            margin: 21px 0 0;
+        }
+        
+        figure{
+            max-width: 595px;
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            height: 397px;
+            z-index: 1;
+            
+            img{
+                height: 100%;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        min-height: 440px;
+        overflow: hidden;
+    
+        &::after{
+            position: absolute;
+            width: 75%;
+            left: 44%;
+            top: 40px;
+            height: 100%;
+            content: ' ';
+            
+            background: -webkit-radial-gradient(closest-side, rgba(255,255,255,0.17) 0%, rgba(255,255,255,0.2) 0%, transparent 100%);
+            background: -moz-radial-gradient(closest-side, rgba(255,255,255,0.17) 0%, rgba(255,255,255,0.2) 0%, transparent 100%);
+            background: radial-gradient(closest-side, rgba(255,255,255,0.17) 0%, rgba(255,255,255,0.2) 0%, transparent 100%);
+        }
+        
+        .mainNav{
+            z-index: 2;
+            
+            .navbar-brand{
+                margin-right: 84px;
+            }
+            
+            .navbar-nav{
+                .nav-link{
+                    padding: 8px 14px;
+                }
+            }
+        }
+        
+        .banner{
+            padding: 30px 0 77px;
+            
+            h1{
+                font-size: 80px;
+            }
+            
+            p{
+                margin: 20px 0 0;
+            }
+        }
+    }
+    
+    
+    @media only screen and (max-width: 1120px) {
+        .banner{
+            figure{
+                right: -20px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        .mainNav{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #083208;
+            z-index: 99;
+            
+            .navbar-collapse{
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                margin: 10px 0 0;
+                padding: 10px 0 0;
+            }
+        }
+    }
+}
+/* Header ends */

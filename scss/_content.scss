@@ -1,0 +1,108 @@
+/* Page Content */
+main{
+    background-color: #f6f6f6;
+    
+    .container{
+        padding-top: 69px;
+        padding-bottom: 69px;
+    }
+    
+    h2{
+        margin: 40px 0 20px;
+    }
+    
+    .badgeCard{
+        border: 0 none;
+        padding: 25px 0 5px;
+        
+        -webkit-box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+           -moz-box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+                box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+        
+        .card-img-top{
+            max-width: 140px;
+            margin: 0 auto;
+        }
+        
+        .card-body{
+            color: #112C4A;
+            
+            h2{
+                margin: 0 0 12px;
+            }
+            
+            p{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                margin: 10px 0 13px;
+            }
+            
+            ul{
+                margin: 0 0 20px;
+                
+                li{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    padding: 5px 0 5px 44px;
+                    position: relative;
+                    
+                    strong{
+                        font-weight: 600;
+                    }
+                    
+                    &:before{
+                        content: '.';
+                        position: absolute;
+                        left: 20px;
+                        top: -3px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .featureBlock{
+        img{
+            width: 100%;
+        }
+        
+        h3{
+            margin: 5px 0 8px;
+        }
+        
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            
+            &.number{
+                color: rgba(132,203,8,0.5);
+                font-size: 40px;
+                line-height: 49px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        h2{
+            margin: 0 0 40px;
+        }
+    
+        .badgeCard{
+            padding: 41px 0 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 992px) {
+        
+        .featureBlock{
+            img{
+                margin: 0 0 15px;
+            }
+        }
+    }
+}
+/* Page Content ends */
